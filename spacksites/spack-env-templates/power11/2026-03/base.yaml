@@ -84,10 +84,6 @@ spack:
     - - '%gcc@12.3.0'
   - gcc@12.3.0 +binutils
 
-  # Intel compilers built with gcc
-  - matrix:
-    - - '%gcc@12.3.0'
-
   concretizer:
     unify: when_possible
   view: false
