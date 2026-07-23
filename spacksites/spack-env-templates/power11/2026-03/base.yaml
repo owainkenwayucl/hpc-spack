@@ -32,7 +32,7 @@ spack:
     # if anything demands a different openmpi, make sure it has the right options
     openmpi:
       require:
-      - spec: 'fabrics=psm2,ofi schedulers=slurm +legacylaunchers'
+      - spec: 'fabrics=ofi schedulers=slurm +legacylaunchers'
       prefer:
       - '@4.1.6'
 
@@ -54,7 +54,7 @@ spack:
       - hdf5 +cxx +fortran -mpi +hl
       - hdf5 +fortran +mpi +hl
       - htslib@1.17
-      - openmpi@4.1.6 fabrics=psm2,ofi schedulers=slurm +legacylaunchers
+      - openmpi@4.1.6 fabrics=ofi schedulers=slurm +legacylaunchers
       - python@3.11.6
       - netcdf-c@4.9.2 -mpi
       - netcdf-fortran@4.6.1
@@ -86,7 +86,7 @@ spack:
 
   # Intel compilers built with gcc
   - matrix:
-    - - intel-oneapi-compilers@2024.2.1 # there is 2025.1.0
+ #   - - intel-oneapi-compilers@2024.2.1 # there is 2025.1.0
   #   - intel-oneapi-compilers@2023.2.4 # last icc/icpc version
     - - '%gcc@12.3.0'
 
