@@ -41,7 +41,7 @@ spack:
     - - apr
       - apr-util
       - bcftools@1.16
-      - beast2@2.7.4
+ #     - beast2@2.7.4 JavaFX is not available for Power in spack - possibly we can pull it in externally?
       - bedtools2@2.31.0
       - bwa@0.7.17
       - cmake
